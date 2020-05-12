@@ -122,7 +122,11 @@ p {
     color: #3e3e3e; }
   .presentation__link {
     text-decoration: none;
-    color: #0075ff; }
+    color: #0075ff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .presentation__link:hover {
+    color: #fc8a5f; }
   .presentation__second-heading {
     font-size: 24px;
     font-weight: bold;
@@ -413,12 +417,17 @@ p {
     margin-top: 32px;
     background-color: #0075ff;
     color: #fff;
-    border: none;
+    border: 2px solid #0075ff;
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
     -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .form__button:hover {
+    background-color: #fff;
+    color: #0075ff; }
 
 .form .form__input:nth-child(n+1):nth-child(-n+2) {
   margin-bottom: 16px; }
